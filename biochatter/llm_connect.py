@@ -1083,7 +1083,7 @@ class GptConversation(Conversation):
             split_correction=split_correction,
         )
 
-        self.ca_model_name = "gpt-3.5-turbo"
+        self.ca_model_name = model_name
         # TODO make accessible by drop-down
 
     def set_api_key(self, api_key: str, user: str):
