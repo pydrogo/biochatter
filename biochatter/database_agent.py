@@ -46,8 +46,8 @@ class DatabaseAgent:
         self.driver = nu.Driver(
             db_name=db_name or "neo4j",
             db_uri=uri,
-            user=user,
-            password=password,
+            db_user=user,
+            db_passwd=password,
         )
 
     def is_connected(self) -> bool:
